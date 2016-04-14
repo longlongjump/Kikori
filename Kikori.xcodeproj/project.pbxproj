@@ -7,13 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44888DB41CBC47BB00446E40 /* KikoriUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 44888DB21CBC47BB00446E40 /* KikoriUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44888DB51CBC47BB00446E40 /* KikoriUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 44888DB31CBC47BB00446E40 /* KikoriUtils.m */; };
+		44888DB71CBFBEA600446E40 /* KikoriLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44888DB61CBFBEA600446E40 /* KikoriLogger.swift */; };
 		449C120D1CB2A54200C92041 /* Kikori.h in Headers */ = {isa = PBXBuildFile; fileRef = 449C120C1CB2A54200C92041 /* Kikori.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		449C121D1CB2A71500C92041 /* KikoriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C121C1CB2A71500C92041 /* KikoriTests.swift */; };
+		449C121F1CB2A71500C92041 /* Kikori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449C12091CB2A54200C92041 /* Kikori.framework */; };
+		449C12261CB2A79000C92041 /* Kikori.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C12251CB2A79000C92041 /* Kikori.swift */; };
+		D0AF2FDAF23155B29D792396 /* Pods_KikoriTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DE2642EE0C195929186523 /* Pods_KikoriTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		449C12201CB2A71500C92041 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 449C12001CB2A54200C92041 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449C12081CB2A54200C92041;
+			remoteInfo = Kikori;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		44888DB21CBC47BB00446E40 /* KikoriUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KikoriUtils.h; sourceTree = "<group>"; };
+		44888DB31CBC47BB00446E40 /* KikoriUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KikoriUtils.m; sourceTree = "<group>"; };
+		44888DB61CBFBEA600446E40 /* KikoriLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KikoriLogger.swift; sourceTree = "<group>"; };
 		449C12091CB2A54200C92041 /* Kikori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kikori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		449C120C1CB2A54200C92041 /* Kikori.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kikori.h; sourceTree = "<group>"; };
 		449C120E1CB2A54200C92041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449C121A1CB2A71500C92041 /* KikoriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KikoriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		449C121C1CB2A71500C92041 /* KikoriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KikoriTests.swift; sourceTree = "<group>"; };
+		449C121E1CB2A71500C92041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449C12251CB2A79000C92041 /* Kikori.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kikori.swift; sourceTree = "<group>"; };
+		71DE2642EE0C195929186523 /* Pods_KikoriTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KikoriTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C322061E2ECA6E33635120F8 /* Pods-KikoriTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KikoriTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KikoriTests/Pods-KikoriTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDBD9C3978E77387A7ABF5F2 /* Pods-KikoriTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KikoriTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KikoriTests/Pods-KikoriTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,14 +51,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		449C12171CB2A71500C92041 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449C121F1CB2A71500C92041 /* Kikori.framework in Frameworks */,
+				D0AF2FDAF23155B29D792396 /* Pods_KikoriTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C674967ED7E99EBC44D65DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71DE2642EE0C195929186523 /* Pods_KikoriTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		449C11FF1CB2A54200C92041 = {
 			isa = PBXGroup;
 			children = (
 				449C120B1CB2A54200C92041 /* Kikori */,
+				449C121B1CB2A71500C92041 /* KikoriTests */,
 				449C120A1CB2A54200C92041 /* Products */,
+				B809B9ACF75B9A2746735C69 /* Pods */,
+				3C674967ED7E99EBC44D65DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				449C12091CB2A54200C92041 /* Kikori.framework */,
+				449C121A1CB2A71500C92041 /* KikoriTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +94,40 @@
 		449C120B1CB2A54200C92041 /* Kikori */ = {
 			isa = PBXGroup;
 			children = (
+				449C12141CB2A61400C92041 /* Source */,
 				449C120C1CB2A54200C92041 /* Kikori.h */,
 				449C120E1CB2A54200C92041 /* Info.plist */,
 			);
 			path = Kikori;
+			sourceTree = "<group>";
+		};
+		449C12141CB2A61400C92041 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				449C12251CB2A79000C92041 /* Kikori.swift */,
+				44888DB21CBC47BB00446E40 /* KikoriUtils.h */,
+				44888DB31CBC47BB00446E40 /* KikoriUtils.m */,
+				44888DB61CBFBEA600446E40 /* KikoriLogger.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		449C121B1CB2A71500C92041 /* KikoriTests */ = {
+			isa = PBXGroup;
+			children = (
+				449C121C1CB2A71500C92041 /* KikoriTests.swift */,
+				449C121E1CB2A71500C92041 /* Info.plist */,
+			);
+			path = KikoriTests;
+			sourceTree = "<group>";
+		};
+		B809B9ACF75B9A2746735C69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C322061E2ECA6E33635120F8 /* Pods-KikoriTests.debug.xcconfig */,
+				FDBD9C3978E77387A7ABF5F2 /* Pods-KikoriTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				449C120D1CB2A54200C92041 /* Kikori.h in Headers */,
+				44888DB41CBC47BB00446E40 /* KikoriUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,16 +163,41 @@
 			productReference = 449C12091CB2A54200C92041 /* Kikori.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		449C12191CB2A71500C92041 /* KikoriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449C12221CB2A71500C92041 /* Build configuration list for PBXNativeTarget "KikoriTests" */;
+			buildPhases = (
+				7873FA1D9D3EA5551779FF05 /* 📦 Check Pods Manifest.lock */,
+				449C12161CB2A71500C92041 /* Sources */,
+				449C12171CB2A71500C92041 /* Frameworks */,
+				449C12181CB2A71500C92041 /* Resources */,
+				A1FD065F3065DB8CE2FB5F94 /* 📦 Embed Pods Frameworks */,
+				FD772F2A0068497376C555A9 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				449C12211CB2A71500C92041 /* PBXTargetDependency */,
+			);
+			name = KikoriTests;
+			productName = KikoriTests;
+			productReference = 449C121A1CB2A71500C92041 /* KikoriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		449C12001CB2A54200C92041 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Eugene Ovchynnykov";
 				TargetAttributes = {
 					449C12081CB2A54200C92041 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					449C12191CB2A71500C92041 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -111,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				449C12081CB2A54200C92041 /* Kikori */,
+				449C12191CB2A71500C92041 /* KikoriTests */,
 			);
 		};
 /* End PBXProject section */
@@ -123,17 +228,91 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		449C12181CB2A71500C92041 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7873FA1D9D3EA5551779FF05 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1FD065F3065DB8CE2FB5F94 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KikoriTests/Pods-KikoriTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD772F2A0068497376C555A9 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KikoriTests/Pods-KikoriTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		449C12041CB2A54200C92041 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44888DB71CBFBEA600446E40 /* KikoriLogger.swift in Sources */,
+				44888DB51CBC47BB00446E40 /* KikoriUtils.m in Sources */,
+				449C12261CB2A79000C92041 /* Kikori.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449C12161CB2A71500C92041 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449C121D1CB2A71500C92041 /* KikoriTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		449C12211CB2A71500C92041 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449C12081CB2A54200C92041 /* Kikori */;
+			targetProxy = 449C12201CB2A71500C92041 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		449C120F1CB2A54200C92041 /* Debug */ = {
@@ -230,6 +409,25 @@
 		449C12121CB2A54200C92041 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Kikori/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VoidCore.Kikori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		449C12131CB2A54200C92041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -241,21 +439,27 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
+			name = Release;
+		};
+		449C12231CB2A71500C92041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C322061E2ECA6E33635120F8 /* Pods-KikoriTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = KikoriTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VoidCore.KikoriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
 			name = Debug;
 		};
-		449C12131CB2A54200C92041 /* Release */ = {
+		449C12241CB2A71500C92041 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDBD9C3978E77387A7ABF5F2 /* Pods-KikoriTests.release.xcconfig */;
 			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Kikori/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = KikoriTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = VoidCore.Kikori;
+				PRODUCT_BUNDLE_IDENTIFIER = VoidCore.KikoriTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -278,6 +482,16 @@
 				449C12131CB2A54200C92041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		449C12221CB2A71500C92041 /* Build configuration list for PBXNativeTarget "KikoriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449C12231CB2A71500C92041 /* Debug */,
+				449C12241CB2A71500C92041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
